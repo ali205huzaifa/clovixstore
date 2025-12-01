@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -16,13 +17,19 @@ const Header = () => {
 
   return (
     <header className="bg-[#FFFF] border-b border-[#DBDBDB]">
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-5">
-        <div className="flex items-center gap-x-1">
-          <Link
-            className="text-4xl font-medium text-primary! md:ml-2 ml-6"
-            href="/"
-          >
-            Clovixstore
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="flex items-center">
+          <Link href="/" className="flex items-center md:ml-2 ml-6">
+            <Image
+              src="/images/logo.jpg"
+              alt="Clovixstore Logo"
+              width={80}
+              height={80}
+              className="object-contain"
+            />
+            <span className="text-2xl font-medium text-primary!">
+              Clovixstore
+            </span>
           </Link>
         </div>
 
@@ -45,7 +52,6 @@ const Header = () => {
         <div className="md:hidden px-5 pb-4">
           <nav className="flex flex-col items-center gap-y-4 text-center w-full text-primary">
             <CartIcon />
-
             <Link
               href="/about"
               onClick={() => setMenuOpen(false)}

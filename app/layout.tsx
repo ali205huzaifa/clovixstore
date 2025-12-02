@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description:
     "Modern E-commerce store where we are uplifting purchasing Experience.",
   icons: {
-    icon: "/images/logo.jpg",
+    icon: "/icons/store.svg",
   },
 };
 

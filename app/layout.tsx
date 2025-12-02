@@ -20,7 +20,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Clovixstore",
   description:
-    "Modern ecommerce store where we are uplifting purchasing Experience.",
+    "Modern E-commerce store where we are uplifting purchasing Experience.",
+  icons: {
+    icon: "/images/logo.jpg",
+  },
 };
 
 export default function RootLayout({
